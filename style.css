@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Shantell+Sans&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Kalam', cursive;
+    font-family: 'Shantell Sans', cursive;
+
+}
+
+/*navbar*/
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.fa-cat{
+    font-size: 28px;
+    padding-left: 5px;
+}
+
+.navbar{
+    filter: opacity(80%);
+}
+
+.nav-item{
+    font-size: 19px;
+}
+
+/*head section*/
+@media(max-width: 560px) {
+    .header_text{
+        font-size: 40px;
+        text-align: center;
+    }
+    .header_text2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .current-time{
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.image_trees{
+    width: 100%;
+    height:550px;
+    object-fit: cover;
+    filter: brightness(10%);
+    filter: grayscale(40%);
+    filter: opacity(55%);
+}
+
+.box{
+    width: 50px;
+    overflow: hidden;
+}
+
+.header_text{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transform: translate(-30% -30%);
+    text-align: center;
+    font-size: 6vw;
+    color: #3b3838f5;
+    transition: 0.7s;
+}
+
+h2:hover{
+    text-shadow: 0 1px 0 #635f5f, 0 2px 0 #ccc,
+    0 3px 0 #635f5f, 0 4px 0 #635f5f,
+    0 5px 0 #635f5f, 0 6px 0 #635f5f,
+    0 7px 0 #635f5f, 0 8px 0 #635f5f,
+    0 9px 0 #635f5f, 0 10px 0 #635f5f,
+    0 11px 0 #635f5f, 0 12px 0 #635f5f,
+    0 20px 30px rgba(58, 58, 58, 0.5);
+}
+
+.header_text2{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    transform: translate(-30%, -30%);
+    text-align: center;
+    font-size: 3.3vw;
+    transition: 0.7s;
+}
+
+.header_text2:hover{
+    text-shadow: 0 1px 0 #635f5f, 0 2px 0 #ccc,
+    0 3px 0 #635f5f, 0 4px 0 #635f5f,
+    0 20px 30px rgba(58, 58, 58, 0.5);
+}
+
+#current-time{
+    position: absolute;
+    top: 63%;
+    left: 32%;
+    transform: translate(-30%, -30%);
+    font-size: 4.5vw;
+    letter-spacing: 33px;
+    transition: 0.7s;
+}
+
+#current-time:hover{
+    text-shadow: 0 1px 0 #635f5f, 0 2px 0 #ccc,
+    0 3px 0 #635f5f, 0 4px 0 #635f5f,
+    0 20px 30px rgba(58, 58, 58, 0.5);
+}
+
+/*About me section*/
+.about{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.aboutme_container{
+    background: #c9c6c6c7;
+}
+
+.slider{
+    padding-top: 20px;
+    display: grid;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    place-items: center;
+}
+
+.wrapper{
+    display: flex;
+    width: calc(450px * 8);
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-450px*4));
+    }
+}
+
+.container-item{
+    display: flex;
+    padding: 15px;
+    perspective: 100%;
+    align-items: center;
+    perspective: 100%;
+}
+
+.image{
+    width: 100%;
+    transition: transform 1s;
+    border-radius: 20px;
+    border: solid darkgrey 4px;
+}
+
+.image :hover {
+    transform: translateZ(20px);
+}
+
+.about_text{
+    font-size: 25px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.aboutMe_text{
+    padding-bottom: 30px;
+}
+
+.btn{
+    margin: 35px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/*gallery cards*/
+.gallery_text{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+
+.gallery{
+    background-color: rgb(193, 189, 189);
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.card-title{
+    font-size: 25px;
+    text-align: center;
+}
+
+.card-text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.gallery-button{
+    font-size: 19px;
+    text-align: center;
+    margin: -1px;
+}
+
+.overlay{
+  bottom: 0;
+  background: rgb(0, 0,0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;  
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+/*footer*/
+.footer-container{
+    background-color: rgb(172, 168, 168);
+    padding: 20px;
+}
+
+.mail-to:hover{
+    color: purple;
+}
+
+.mail-to{
+    text-decoration: underline;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+i{
+    display: flex;
+    float: right;
+    font-size: 27px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.fa-instagram:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-discord:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-github:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-linkedin:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}

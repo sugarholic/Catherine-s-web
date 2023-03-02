@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catherine's Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--font Awesome-->
+    <script src="https://kit.fontawesome.com/b3ed543b82.js" crossorigin="anonymous"></script>
+
+    <!--animation-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <!--custom style sheet-->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body data-bs-theme=" dark ">
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Catherine's Website<i class="fa-solid fa-cat"></i></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link active" aria-current="page">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="./gallery.html" class="nav-link active" aria-current="page">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a href="./timeline.html" class="nav-link active" aria-current="page">TIMELINE</a>
+            </li>
+            <li class="nav-item">
+              <a href="./project.html" class="nav-link active" aria-current="page">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link active" aria-current="page">CONTACT</a>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Header section (opening)--> 
+    <header>
+      <div id="top-header" class="sm-auto">
+        <img src="./images/out6.jpg" alt="image_trees" class="image_trees"> 
+          
+        <div class="box one">  
+        <h2 class="header_text animate__animated animate__backInLeft"> 
+            Lee Catherine Duran        
+          </h2>    
+        </div>        
+        
+
+          <div class="box two">
+          <p class="header_text2 animate__animated animate__backInRight">
+            <em>A Fresh Graduate</em>
+          </p>
+          </div>
+
+
+        <div class="box three">
+        <p id="current-time" class="animate__animated animate__backInUp animte__delay-1s"></p>
+        </div>
+      </div>
+    </header> 
+
+    <!--About me section-->
+    <div class="aboutme_container">
+
+      <h1 class="about animate__animated wow animate__fadeInDownBig animate__delay-1s" id="about" style="text-decoration: overline;">About Me</h1>
+
+      <div class="slider">
+      <div class="wrapper">
+        <div class="container-item">
+          <img src="./images/me.png" alt="me" height="400px" class="image 1">
+        </div>
+        <div class="container-item">
+          <img src="./images/friends1.jpg" alt="me and my friends at work" height="400px" class="image 2">
+        </div>          
+        <div class="container-item">
+          <img src="./images/friends2.jpg" alt="me and my friends at photoboot" height="400px" class="image 3">
+        </div>
+        <div class="container-item">
+          <img src="./images/friends3.jpg" alt="me and my friends at restaurant" height="400px" class="image 4">
+        </div>         
+
+      <!--a copy of the same photos-->
+        <div class="container-item">
+          <img src="./images/me.png" alt="me" height="400px" class="image 1">
+        </div>
+        <div class="container-item">
+          <img src="./images/friends1.jpg" alt="me and my friends at work" height="400px" class="image 2">
+        </div>          
+        <div class="container-item">
+          <img src="./images/friends2.jpg" alt="me and my friends at photoboot" height="400px" class="image 3">
+        </div>
+        <div class="container-item">
+          <img src="./images/friends3.jpg" alt="me and my friends at restaurant" height="400px" class="image 4">
+        </div>  
+      </div> 
+      </div>
+
+      <!--About me Texts-->
+      <div class="aboutMe_text">
+        <p class="p-5 about_text">I am a recent graduate and studied Information Management. I worked at a various industries after graduating such as working as a librarian, project assistant, and QA. </p>
+        <p class="about_text"> I enjoy learning new things and improving myself. I also like to learn different languages to communicate and understand different cultures and countries.</p>
+        
+        <div class="text-center">
+          <a href="./timeline.html" class="btn btn-outline-dark btn-lg animate__animated wow animate__bounce animate__delay-0.5s" aria-pressed="true">More About Myself</a>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+
+      <div class="gallery" id="gallery">
+      <h1 class="gallery_text animate__animated wow animate__fadeInDownBig animate__delay-0.5s" style="text-decoration: overline;">Gallery</h1>        
+     <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card animate__animated wow animate__zoomInLeft animate__delay-2s">
+            <img src="./images/museum.png" alt="museum photo" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title" style="text-decoration: underline;">Musuem</h5>
+              <p class="card-text">I like visiting musuems when I'm free, I like discovering new stuff, learning about history and looking at old artifacts.</p>
+              <div class="text-center">
+                <a href="./museum.html" class="overlay btn btn-outline-secondary gallery-button">Musuem Gallery</a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card animate__animated wow animate__zoomInLeft animate__delay-1s">
+            <div class="card">
+              <img src="./images/goingOut.png" alt="bridge photo" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline;">Going Out</h5>
+                <p class="card-text">I like going out and hanging out with my friends. Sometimes, I also like to go out alone and have a walk outside to get some air.</p>              
+                <div class="text-center">
+                  <a href="./out.html" class="overlay btn btn-outline-secondary gallery-button">Out Gallery</a>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card animate__animated wow animate__zoomInLeft animate__delay-0.5s">
+            <div class="card">
+              <img src="./images/food.png" alt="risotto" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title" style="text-decoration: underline;">Food</h5>
+                <p class="card-text">One of my favourite thing to do is to eat and I often go and try out new cuisine. I also like to discover food gem.</p>
+                <div class="text-center">
+                  <a href="./food.html" class="overlay btn btn-outline-secondary gallery-button">Food Gallery</a>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+     </div>
+
+     <!--footer-->
+
+     <footer>
+      
+      <div class="footer-container">
+        <div class="row">
+          <div class="col column-1">
+            <a href="mailto:catherinelee0006@gmail.com" class="mail-to">Mail me</a>
+          </div>
+
+          <div class="col column-2">
+            <a href="https://www.linkedin.com/in/catherine-duran-lee-a620471bb/">
+              <i class="fa-brands fa-linkedin" style="color: blue;"></i>
+            </a>
+            <a href="https://discord.com/channels/@me/1072508876534071386">
+              <i class="fa-brands fa-discord" style="color: rgb(97, 35, 243);"></i>
+            </a>
+            <a href="https://github.com/sugarholic">
+              <i class="fa-brands fa-github" style="color: black;"></i>
+            </a>
+            <a href="https://www.instagram.com/eat_with_glaze/">
+              <i class="fa-brands fa-instagram" style="color: rgb(189, 124, 185);"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <!--WOW-->
+    <script src="./wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+    <!--custom css-->
+    <script src="./home.js"></script>
+  </body>
+</html>

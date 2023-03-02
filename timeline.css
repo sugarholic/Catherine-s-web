@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Shantell+Sans&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Kalam', cursive;
+    font-family: 'Shantell Sans', cursive;
+}
+
+body{
+    background-color:  rgb(219, 219, 219);
+}
+
+/*navbar*/
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.fa-cat{
+    font-size: 28px;
+    padding-left: 5px;
+}
+
+.navbar{
+    filter: opacity(80%);
+}
+
+.nav-item{
+    font-size: 19px;
+}
+
+/*timeline*/
+h1{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: overline;
+    padding-top: 50px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+.timeline:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    width: 2px;
+    top: -20px;
+    z-index: 1;
+}
+
+.timeline{
+    position: relative;
+    margin: 50px auto;
+    width: 1000px;
+    padding: 50px 0;
+}
+
+.timline ul{
+    margin: 0;
+    padding: 0;
+}
+
+.timeline ul li {
+    list-style: none;
+    box-sizing: border-box;
+    line-height: normal;
+    position: relative;
+    width: 50%;
+    padding: 40px 70px;
+}
+
+/*h2*/
+.timeline ul li .right_content h2{
+    padding: 0px 2px 18px 0px;
+}
+
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.left_content{
+    padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(219, 165, 229, 0.558);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(227, 193, 234, 0.558);
+    right: -6px;
+    top: 24px;
+    z-index: 1;
+}
+
+.timeline ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(219, 165, 229, 0.558);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(227, 193, 234, 0.558);
+    left: -6px;
+    top: 24px;
+}
+
+.timeline ul li:nth-child(odd) .left_content{
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    /* box-shadow: 0 0 0 5px rgba(216, 157, 227, 0.558); */
+    border-radius: 16px;
+}
+
+.timeline ul li:nth-child(even) .left_content{
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    /* box-shadow: 0 0 0 5px rgba(216, 157, 227, 0.558); */
+    border-radius: 16px;
+}
+
+@media (max-width:1000px) {
+    .timeline{
+        width: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    .timeline{
+        width: 100%;
+    }
+    .timline:before{
+        left: 20px;
+    }
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+    }
+    .timeline ul li:nth-child(odd):before
+    {
+        top: -18px;
+        left: 16px;
+    }
+    .timeline ul li:nth-child(even):before
+    {
+        top: -18px;
+        left: 16px;
+    }
+    .timeline ul li:nth-child(odd) .left_content,
+    .timeline ul li:nth-child(even) .left_content
+    {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+
+}
+
+.vertical{
+    border-left: 6px solid rgba(157, 155, 155, 0.851);
+    height: 1000px;
+    position: absolute;
+    left: 51%;
+}
+
+h3, h2{
+    font-weight: bold;
+    color: rgb(142, 123, 145);
+}
+
+h2{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 18px;
+}
+
+
+/*footer*/
+.footer-container{
+    background-color: rgb(172, 168, 168);
+    padding: 20px;
+}
+
+.mail-to:hover{
+    color: purple;
+}
+
+.mail-to{
+    text-decoration: underline;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+i{
+    display: flex;
+    float: right;
+    font-size: 27px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.fa-instagram:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-discord:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-github:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-linkedin:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}

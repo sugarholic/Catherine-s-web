@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Shantell+Sans&display=swap');
+
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+    font-family: 'Shantell Sans', cursive;
+}
+
+body{
+    background-color:  rgb(219, 219, 219);
+}
+
+/*navbar*/
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.fa-cat{
+    font-size: 28px;
+    padding-left: 5px;
+}
+
+.navbar{
+    filter: opacity(80%);
+}
+
+.nav-item{
+    font-size: 19px;
+}
+
+/*footer*/
+.footer-container{
+    background-color: rgb(172, 168, 168);
+    padding: 20px;
+}
+
+.mail-to:hover{
+    color: purple;
+}
+
+.mail-to{
+    text-decoration: underline;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+i{
+    display: flex;
+    float: right;
+    font-size: 27px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.fa-instagram:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-discord:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-github:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-linkedin:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+
+
+/*Gallery*/
+h1{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: overline;
+    padding-top: 50px
+}
+.gallery_text{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+
+.gallery{
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.card-title{
+    font-size: 25px;
+    text-align: center;
+}
+
+.gallery-button{
+    font-size: 19px;
+    text-align: center;
+    margin: -1px;
+}
+
+.overlay{
+  bottom: 0;
+  background: rgb(0, 0,0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;  
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0,1);
+    position: relative;
+    z-index: 10;
+    -webkit-transform: rotate(-2.5deg);
+    transform: rotate(-2.5deg);
+}
+
+.card img{
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+}
+
+

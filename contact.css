@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Shantell+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    font-family: 'Shantell Sans', cursive;
+}
+
+body{
+    background-color: rgb(219, 219, 219);
+}
+
+/*navbar*/
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.fa-cat{
+    font-size: 28px;
+    padding-left: 5px;
+}
+
+.navbar{
+    filter: opacity(80%);
+}
+
+.nav-item{
+    font-size: 19px;
+}
+
+/*contact me form */
+h1{
+    padding-top: 40px;
+    text-align: center;
+    text-decoration: overline;
+}
+
+/*form*/
+form{
+    padding-top: 30px;
+    padding: 70px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input:placeholder-shown{
+    font-style: italic;
+    color: grey;
+    filter: opacity(80%);
+}
+
+textarea:placeholder-shown{
+    font-style: italic;
+    color: grey;
+    filter: opacity(80%);
+}
+
+.btn{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.submitButton{
+    text-align: center;
+}
+
+/*footer*/
+.footer-container{
+    background-color: rgb(172, 168, 168);
+    padding: 20px;
+}
+
+.mail-to:hover{
+    color: purple;
+}
+
+.mail-to{
+    text-decoration: underline;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+i{
+    display: flex;
+    float: right;
+    font-size: 27px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.fa-instagram:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-discord:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-github:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
+.fa-linkedin:hover{
+    transform: scale(1.5);
+    transition: 1s ease-out;
+}
+
